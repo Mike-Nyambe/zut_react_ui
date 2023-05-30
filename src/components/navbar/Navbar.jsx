@@ -9,7 +9,7 @@ const Menu = () => (
         <p><a href="#home">home</a></p>
         <p><a href="#about">about</a></p>
         <div class="dropdown">
-            <button class="dropbtn">our programs <BsChevronDown className='shev' color='#fff' size={18} /></button>
+            <button class="dropbtn">programs <BsChevronDown className='shev' color='#fff' size={18} /></button>
             <div class="dropdown-content">
                 <a href="#">degree</a>
                 <a href="#">diploma</a>
