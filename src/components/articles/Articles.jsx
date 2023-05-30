@@ -14,7 +14,7 @@ const Articles = ( { imgUrl, date, title, text }) => {
           <p>{text}</p>
         </div>
         <div className="zictc__blog-container__article-content__btn">
-          <a href="">read more</a>
+          <a href="https://mikenyambe.com/">read more</a>
         </div>
       </div>
     </div>
