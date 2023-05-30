@@ -48,8 +48,8 @@
     cursor: pointer;
 }
 
-.app__navbar-sign button,
-.app__navbar-menu_container button{
+.app__navbar-sign .apply-now,
+.app__navbar-menu_container .apply-now{
     color: var(--color-text-1);  
     background: #FF4820;
     padding: 0.5rem 1rem;

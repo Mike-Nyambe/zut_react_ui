@@ -44,7 +44,7 @@ const Navbar = () =>{
                 </div> 
                 <div className="app__navbar-sign">
                     <p>sign in</p>
-                    <button type="button">sign up</button>
+                    <button className='apply-now' type="button">Apply Now</button>
                 </div>
                 <div className="app_navbar-menu">
                     {
@@ -58,7 +58,7 @@ const Navbar = () =>{
                                     <Menu />
                                     <div className="app__navbar-menu_container-links-sign">
                                         <p>sign in</p>
-                                        <button type="button">sign up</button>
+                                        <button type="button" className='apply-now'>Apply Now</button>
                                     </div>
                                 </div>
                             </div>
