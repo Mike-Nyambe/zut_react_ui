@@ -1,0 +1,176 @@
+.app__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+.shev{
+    vertical-align: middle;
+}
+.app__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__navbar-links_logo{
+    margin-right: 2rem;
+}
+
+.app__navbar-links_logo img{
+   width: 62.56px;
+   height: 54.02px;
+}
+
+.app__navbar-links_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.app__navbar-sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.app__navbar-links_container p,
+.app__navbar-sign p,
+.app__navbar-menu_container p.app__navbar {
+    color: var(--color-text-1);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    font-family: var(--font-family);
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.app__navbar-sign button,
+.app__navbar-menu_container button{
+    color: var(--color-text-1);  
+    background: #FF4820;
+    padding: 0.5rem 1rem;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.dropbtn {
+    color: var(--color-text-1);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    font-family: var(--font-family);
+    margin: 0 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-footer);
+    min-width: 14rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #ddd;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+}
+
+.dropdown-content a:hover {
+    background-color: #999999a2;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.app_navbar-menu{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.app__navbar-menu img {
+    cursor: pointer;
+}
+
+.app__navbar-menu_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background:var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px ;
+    border-radius:  5px;
+    box-shadow: 0 0 5 rgba(0,0,0.2);
+}
+
+.app__navbar-menu_container p{
+    margin: 1rem 0;
+}
+
+.app__navbar-menu_container-links-sign{
+    display: none;
+}
+
+@media screen and (max-width:1050px) {
+    .app__navbar-links_container{
+        display: none;
+    }
+    .app_navbar-menu{
+        display: flex;
+    }
+}
+@media screen and (max-width:700px) {
+    .app__navbar{
+        padding: 2rem 4rem;
+    }
+}
+@media screen and (max-width:550px) {
+    .app__navbar{
+        padding: 2rem;
+    }
+    .app__navbar-sign{
+        display: none;
+    }
+    .app__navbar-menu_container{
+        top: 20px;
+    }
+    .app__navbar-menu_container-links-sign{
+        display: block;
+    }
+}

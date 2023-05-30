@@ -1,0 +1,176 @@
+.student__status {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+    background: var(--color-footer);
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.student__status-feature {
+    display: flex;
+}
+
+.student__status-feature .student__features-container__feature {
+    margin: 0;
+}
+
+.student__status-feature .student__features-container_feature-text {
+    max-width: 700px;
+}
+
+.student__status-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 4rem 0 2rem;
+}
+
+.student__status-heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    max-width: 510px;
+}
+
+.student__status-heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.student__status-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    margin-top: 2rem;
+}
+.student__status-container-heading div{
+    width: 38px;
+    height: 3px;
+    background: var(--gradient-bar);
+} 
+.student__status-container-heading h2{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+    color: var(--color-text-1);
+    
+}
+.student__status-container-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+.student__status-container-link a{
+    color: #fff;
+    font-family: var(--font-family);
+    border: 1px solid #fff;
+    padding: 0.8rem 2.5rem;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 100ms;
+    margin: 1rem 0;
+}
+.student__status-container-link a:hover{
+    color: #333;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.student__status-container .student__features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+.student__status-container .student__features-container_feature-text {
+    margin-top: 0.5rem;
+}
+
+
+@media screen and (max-width: 850px) {
+    .student__status-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .student__status-heading p {
+        margin-top: 1rem;
+    }
+
+    .student__status-container-link{
+        flex-direction: column;
+    }
+    .student__status-container-link a{
+        margin-bottom: 1rem;
+        padding: 0.5rem 2rem;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .student__status-feature .student__features-container__feature {
+        flex-direction: column;
+    }
+
+    .student__status-feature .student__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .student__status-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .student__status-container-link a{
+        padding: 0.5rem 1.5rem;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .student__status-container .student__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+    .student__status-container-link a{
+        margin-bottom: 0.1rem;
+        font-size: 12px;
+    }
+}
